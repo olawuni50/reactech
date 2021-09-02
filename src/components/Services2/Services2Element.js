@@ -1,89 +1,37 @@
 import styled from "styled-components"
 
-export const ServicesContainer = styled.div`
-height:800px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background: #fff;
-padding: 100px 0 100px;
-
-@media screen and (max-width: 768px){
-    height: 1100px;
-}
-
-@media screen and (max-width: 480px){
-    height: 1300px;
-}
-
-@media screen and (max-width: 960px){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+export const ServiceContainer = styled.section`
+height: auto;
+margin-bottom: 3rem;
 `
 
 export const ServiceWrapper = styled.div`
-max-width: 1000px;
+max-width: 1100px;
 margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-align-items: center;
-grid-gap: 16px;
-padding: 0 50px;
-
-
-@media screen and (max-width: 1000px){
-    grid-template-columns: 1fr 1fr;
-}
+display:flex;
+justify-content: space-between;
 
 @media screen and (max-width: 768px){
-    grid-template-columns: 1fr;
-    padding: 0 20px
+    max-width: 300px;
 }
 `
 
-export const ServiceCard = styled.div`
-background: #fff;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-/* width: 200px;
-height: 250px; */
-max-height: 300px;
-max-width: 600px;
-padding: 30px;
-border-radius: 15px 70px 30px;
-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-transition: all 0.2s ease-in-out;
-
-&:hover{
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    background: #01bf71
-    
-}
-`;
-
-export const ServicesIcon = styled.img`
-height: 100px;
-width: 100px;
-margin-bottom: 5px;
-margin-top: -3px;
-padding: 2px;
-`;
-
-export const ServicesH2=styled.h2`
-font-size: 1.5rem;
-margin-bottom: 10px
+export const Service = styled.div`
+max-width: 650px;
 `
 
-export const ServicesP = styled.p`
-font-size: 1.3rem;
-text-align: center;
+export const ServiceContent = styled.div`
+margin-bottom: 2rem;
 `
+
+export const ServiceHead = styled.h1`
+line-height: 1.2;
+padding-bottom: 10px;
+
+`
+export const ServiceP = styled.p`
+line-height: 1.7;
+text-align: justify;
+`
+
+

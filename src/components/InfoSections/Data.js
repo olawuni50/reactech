@@ -27,7 +27,7 @@ export const homeObjTwo ={
     topLine: 'Global Reach ',
     headline: "We help you transform your business or company to the world",
     description: "Allow us to redefine your business and project your work to the world with our premium designs",
-    imgStart: true,
+    imgStart: false,
     buttonLabel: "Get Started",
     img:(`${image2}`),
     alt: "coding",

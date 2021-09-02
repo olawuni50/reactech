@@ -12,7 +12,7 @@ background: ${({lightBg})=>(lightBg ? "#f9f9f9" : "#010606")};
 export const InfoWrapper = styled.div`
 display: grid;
 z-index: 1;
-height: 860px;
+height: 700px;
 width: 100%;
 max-width: 1100px;
 margin-left: auto;
@@ -49,9 +49,9 @@ padding-Top: 0;
 padding-bottom: 60px;
 `
 
-export const TopLine = styled.p`
+export const TopLine = styled.h1`
 color: #01bf71;
-font-size: 36px;
+/* font-size: 36px; */
 font-weight: 700;
 letter-spacing: 1.4px;
 text-transform: uppercase;
@@ -61,7 +61,7 @@ margin-bottom: 16px;
 export const Heading = styled.h1`
 color: #fff;
 margin-bottom: 24px;
-font-size: 53px;
+/* font-size: 53px; */
 line-height: 1.1.%;
 font-weight:600;
 color: ${({lightText})=>(lightText ? "#f7f8fa": "black")};
@@ -74,8 +74,8 @@ color: ${({lightText})=>(lightText ? "#f7f8fa": "black")};
 export const Subtitle = styled.p`
 max-width: 440px;
 margin-bottom: 35px;
-font-size: 22px;
-line-height:24px;
+font-size: 20px;
+line-height:1.7;
 color: ${({darkText})=>(darkText ? "#010606":"#fff")}
 `
 
@@ -90,7 +90,7 @@ height: 100%;
 `;
 
 export const Img = styled.img`
-width: 100%;
+width: 80%;
 margin: 0 0 10px 0;
 padding-right: 0;
 `;

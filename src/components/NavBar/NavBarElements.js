@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 export const Nav = styled.nav`
 background: ${({scrollNav})=>(scrollNav ? "#000": "transparent")};
-height: 80px;
+height: 60px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -14,6 +14,7 @@ position:sticky;
 font-size: 1.5rem;
 top:0;
 margin-top: -80px;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 
 
 @media screen and (max-width: 960px){
@@ -79,7 +80,7 @@ height: 80px;
 
 export const NavbarLinks = styled(LinkS)`
 color: #fff;
-font-size: 20px;
+font-size: 15px;
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -103,12 +104,14 @@ align-items: center;
 `
 
 export const NavbtnLink = styled(LinkR)`
-border-radius: 50px;
-background: #01bf71;
+border-radius: 10px;
+/* background: #01bf71; */
+background: red;
 white-space: nowrap;
-padding: 10px 22px;
-color: #010606;
-font-size: 20px;
+padding: 10px;
+/* color: #010606; */
+color: #fff;
+font-size: 15px;
 outline: none;
 border:none;
 text-decoration: none;
@@ -117,8 +120,9 @@ cursor: pointer;
 
 
 &:hover{
-    transition: all 0.2s ease-in-out;
+    /* transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #010606; */
+    transform: scale(0.98)
 }
 `

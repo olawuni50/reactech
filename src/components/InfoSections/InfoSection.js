@@ -10,7 +10,7 @@ buttonLabel, img, alt, primary, darkText, dark, imgStart}) => {
           <InfoContainer lightBg={lightBg} id={id}>
               <InfoWrapper>
                   <InfoRow imgStart={imgStart}>
-                      <Column1>
+                      <Column1 data-aos="fade-right">
                       <TextWrapper>
                           <TopLine>{topLine}</TopLine>
                           <Heading lightText={lightText}>{headline}</Heading>
@@ -26,7 +26,7 @@ buttonLabel, img, alt, primary, darkText, dark, imgStart}) => {
                           </BtnWrap>
                       </TextWrapper>
                       </Column1>
-                      <Column2>
+                      <Column2 data-aos="fade-left">
                       <ImgWrap>
                       <Img src={img} alt={alt}/>                      
                       </ImgWrap>

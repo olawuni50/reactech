@@ -1,35 +1,63 @@
 import React from 'react'
 import {ServicesContainer, ServicesH2, ServiceH1,
-ServiceWrapper, ServiceCard, ServicesIcon,
-ServicesP} from "./ServicesElement"
-import Icon1 from "../../Images/T2.svg"
-import Icon2 from "../../Images/T1.svg"
-import Icon3 from "../../Images/T4.svg"
+ServiceWrapper, ServiceCard,  ServicesP} from "./ServicesElement"
+import {MdDeveloperMode} from "react-icons/md"
+import {RiAdvertisementFill} from "react-icons/ri"
+import {FaMobileAlt, FaDeploydog} from "react-icons/fa"
+import {CgWebsite} from "react-icons/cg"
+import {SiMicrostrategy} from "react-icons/si"
+
+
 const Services = () => {
     return (
         <>
           <ServicesContainer id="services">
-              <ServiceH1>Our Services</ServiceH1>
+              <ServiceH1 data-aos="zoom-in">Our Services</ServiceH1>
               <ServiceWrapper>
-                  <ServiceCard>
-                      <ServicesIcon src={Icon1}/>
-                      <ServicesH2>Reduce Expenses</ServicesH2>
-                      <ServicesP>We help reduce your fees and increase your overall
-                          revenue
-                      </ServicesP>
-                  </ServiceCard>
-                  <ServiceCard>
-                      <ServicesIcon src={Icon2}/>
-                      <ServicesH2>Premium Benefits</ServicesH2>
-                      <ServicesP>Unlock our special membership card that returs 5% cash back.</ServicesP>
-                  </ServiceCard>
-                  <ServiceCard>
-                      <ServicesIcon src={Icon3}/>
-                      <ServicesH2>Virtual Offices</ServicesH2>
-                      <ServicesP>We help reduce your fees and increase your overall
-                          revenue
-                      </ServicesP>
-                  </ServiceCard>
+
+<ServiceCard data-aos="flip-right">                   
+       <ServicesH2> <FaDeploydog style={{fontSize:"26px", marginRight:"1rem"}}/> Seamless Deployment</ServicesH2>
+       <ServicesP>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur possimus  </ServicesP>
+   </ServiceCard>
+
+   <ServiceCard data-aos="flip-right">                   
+       <ServicesH2> <CgWebsite style={{fontSize:"26px", marginRight:"1rem"}}/>Website Maintainance</ServicesH2>
+       <ServicesP>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur possimus  </ServicesP>
+   </ServiceCard>
+    
+     <ServiceCard data-aos="flip-right">                   
+       <ServicesH2> <SiMicrostrategy style={{fontSize:"26px", marginRight:"1rem"}}/> Business Strategy</ServicesH2>
+       <ServicesP>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur possimus  </ServicesP>
+   </ServiceCard>
+
+   <ServiceCard data-aos="flip-right">
+        <ServicesH2> <MdDeveloperMode style={{fontSize:"26px", marginRight:"1rem"}}/>Website Development</ServicesH2>
+       <ServicesP>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur possimus  </ServicesP>
+  </ServiceCard>
+
+   <ServiceCard data-aos="flip-right">
+        <ServicesH2> <RiAdvertisementFill style={{fontSize:"26px", marginRight:"1rem"}}/> Marketing and Reporting</ServicesH2>
+       <ServicesP>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur possimus  </ServicesP>
+   </ServiceCard>
+
+   <ServiceCard data-aos="flip-right">
+       <ServicesH2> <FaMobileAlt style={{fontSize:"26px", marginRight:"1rem"}}/> Mobile App Development</ServicesH2>
+       <ServicesP>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Aliquam enim hic distinctio corporis aspernatur possimus  </ServicesP>
+   </ServiceCard>
+
+
               </ServiceWrapper>
               
      </ServicesContainer>   
